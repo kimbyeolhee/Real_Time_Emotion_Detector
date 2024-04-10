@@ -1,0 +1,9 @@
+root_path: /Users/korea/OneDrive/바탕 화면/emotion_detector
+
+data:
+  folder_path: data
+  train_file_name: train.csv
+  test_file_name: test.csv
+
+model:
+  name_or_path: "google/vit-base-patch16-224-in21k"
