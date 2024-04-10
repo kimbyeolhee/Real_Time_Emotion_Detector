@@ -76,11 +76,11 @@ class ImageFileClassificationDataset(FileClassification):
         for data in tqdm(self):
             filepath = data["filepath"]
             image = Image.open(filepath)
-            image = Image.convert("RGB")
+            image = image.convert("RGB")
             data_dict["images"].append(image)
 
             label = data[self.label_key]
-            label_idx = self.label_reader.get_label_idx(label)
+            label_idx = self.label_reader.label_to_idx(label)
             data_dict["labels"].append(label_idx)
 
             if self.num_samples > 0 and len(data_dict["images"]) >= self.num_samples:

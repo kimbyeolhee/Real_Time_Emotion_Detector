@@ -12,8 +12,8 @@ class LabelReader:
             with open(self.labels_files, "r") as f:
                 self.class_labels = f.read().splitlines()
                 for i, label in enumerate(self.class_labels):
-                    self.label_indices[i] = label
-            print(f"{len(self.class_labels)} labels loaded")
+                    self.label_indices[label] = i
+            print(f"{self.label_indices} labels loaded")
     
     def num_labels(self):
         return len(self.class_labels)

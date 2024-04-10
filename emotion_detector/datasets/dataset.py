@@ -13,6 +13,6 @@ class Dataset:
     
     def build(self):
         try:
-            self.build()
+            self._build()
         except NotImplementedError:
             print("must implement _build() method")

@@ -164,7 +164,7 @@ data/train
 data/test
 data/labels.txt
 data/train.csv
-
+data/test.csv
 # virtualenv
 venv_vit/
 
