@@ -1,6 +1,6 @@
 model:
   emotion_classifier:
-    name_or_path: "saved_models"
+    name_or_path: "StoneSeller/emotion-classifier-vit"
   face_detector:
     name_or_path: "haarcascade_files/haarcascade_frontalface_default.xml"
 
