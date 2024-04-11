@@ -2,7 +2,9 @@
 Using cam to capture face emotion into 4 category (Happy, Sad, Neutral, Angry)
 
 ## Environment setup
+
 We have experimented the implementation on the following enviornment.
+
 ```
 # create virtual python enviroment
 python -m venv venv_vit
@@ -12,18 +14,23 @@ source venv_vit/Scripts/activate
 pip install -r requirements.txt
 ```
 
-## Prepare  dataset
+## Prepare dataset
+
 Datasets we used are as follows:
-| Dataset | Download             | Comment  |
+| Dataset | Download | Comment |
 |-------|:--------------------:|---------------|
-| FER-2013     | [Link](https://www.kaggle.com/datasets/msambare/fer2013) | Change categories 7 to 4 |
+| FER-2013 | [Link](https://www.kaggle.com/datasets/msambare/fer2013) | Change categories 7 to 4 |
 
 For more details, please refer to [data description](/data/README.md).
 
 ## Train model
+
 ```
+python train.py
 ```
 
-## Detect emotion 
+## Detect emotion
+
 ```
+python inference.py
 ```
