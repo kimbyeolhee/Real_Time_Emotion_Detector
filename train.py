@@ -50,7 +50,6 @@ def main(config):
         per_device_train_batch_size = config.training_args.per_device_train_batch_size,
         evaluation_strategy = config.training_args.evaluation_strategy,
         num_train_epochs = config.training_args.num_train_epochs,
-        use_cpu = config.training_args.use_cpu,
         save_steps = config.training_args.save_steps,
         eval_steps = config.training_args.eval_steps,
         logging_steps = config.training_args.logging_steps,
@@ -64,7 +63,7 @@ def main(config):
     def collate_fn(batch):
         return {
             "pixel_values": torch.stack([x["pixel_values"] for x in batch]),
-            "labels": torch.tensor([x["label"] for x in batch])
+            "labels": torch.tensor([x["labels"] for x in batch])
         }
     
     metric = load_metric("accuracy")
