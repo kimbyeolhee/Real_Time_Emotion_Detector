@@ -26,11 +26,11 @@ For more details, please refer to [data description](/data/README.md).
 ## Train model
 
 ```
-python train.py
+python train.py -c <your_config>
 ```
 
 ## Detect emotion
 
 ```
-python inference.py
+python inference.py -c <your_config>
 ```
