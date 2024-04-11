@@ -26,11 +26,13 @@ For more details, please refer to [data description](/data/README.md).
 ## Train model
 
 ```
-python train.py -c <your_config>
+python train.py -c base_config
 ```
 
 ## Detect emotion
 
+You can use the trained model by specifying the base_config from Hugging Face (StoneSeller/emotion-classifier-vit).
+
 ```
-python inference.py -c <your_config>
+python inference.py -c inference_config
 ```
