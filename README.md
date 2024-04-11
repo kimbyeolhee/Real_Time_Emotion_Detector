@@ -31,7 +31,9 @@ python train.py -c base_config
 
 ## Detect emotion
 
-You can use the trained model by specifying the base_config from Hugging Face (StoneSeller/emotion-classifier-vit).
+Download the [haarcascade_frontface_default.xml file](https://github.com/opencv/opencv/tree/master/data/haarcascades) and place it in the haarcascade_files folder.
+
+You can use the trained model by specifying the base_config from Hugging Face ([StoneSeller/emotion-classifier-vit](https://huggingface.co/StoneSeller/emotion-classifier-vit)).
 
 ```
 python inference.py -c inference_config
