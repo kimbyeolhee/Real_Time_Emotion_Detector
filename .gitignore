@@ -162,8 +162,13 @@ cython_debug/
 # data files
 data/train
 data/test
+
 # virtualenv
 venv_vit/
 
 # .git
 .git/
+
+# saved_models
+saved_models/
+haarcascade_files/haarcascade_frontalface_default.xml
